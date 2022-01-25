@@ -1,0 +1,380 @@
+{
+  "buttons": [
+    [
+      {
+        "txt": "C/CE",
+        "col": 0,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "-+",
+        "col": 1,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "%",
+        "col": 2,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "/",
+        "col": 3,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "(",
+        "col": 4,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": ")",
+        "col": 5,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "acos",
+        "col": 6,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "acosh",
+        "col": 7,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "asin",
+        "col": 8,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "asinh",
+        "col": 9,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "sin",
+        "col": 10,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "sinh",
+        "col": 11,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "sqrt",
+        "col": 12,
+        "colspan": 1,
+        "bg": "black"
+      }
+    ],
+    [
+      {
+        "txt": "7",
+        "col": 0,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "8",
+        "col": 1,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "9",
+        "col": 2,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "x",
+        "col": 3,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "atan",
+        "col": 4,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "atan2",
+        "col": 5,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "atanh",
+        "col": 6,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "ceil",
+        "col": 7,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "cos",
+        "col": 8,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "cosh",
+        "col": 9,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "tan",
+        "col": 10,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "tanh",
+        "col": 11,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "trunc",
+        "col": 12,
+        "colspan": 1,
+        "bg": "black"
+      }
+    ],
+    [
+      {
+        "txt": "4",
+        "col": 0,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "5",
+        "col": 1,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "6",
+        "col": 2,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "-",
+        "col": 3,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "degrees",
+        "col": 4,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "dist",
+        "col": 5,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "exp",
+        "col": 6,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "abs",
+        "col": 7,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "factorial",
+        "col": 8,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "floor",
+        "col": 9,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "perm",
+        "col": 10,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "comb",
+        "col": 11,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "ulp",
+        "col": 12,
+        "colspan": 1,
+        "bg": "black"
+      }
+    ],
+    [
+      {
+        "txt": "1",
+        "col": 0,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "2",
+        "col": 1,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "3",
+        "col": 2,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "+",
+        "col": 3,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "fmod",
+        "col": 4,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "gamma",
+        "col": 5,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "gcd",
+        "col": 6,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "lcm",
+        "col": 7,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "lgamma",
+        "col": 8,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "log",
+        "col": 9,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "pi",
+        "col": 10,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "e",
+        "col": 11,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "tau",
+        "col": 12,
+        "colspan": 1,
+        "bg": "black"
+      }
+    ],
+    [
+      {
+        "txt": "0",
+        "col": 0,
+        "colspan": 2,
+        "bg": "black"
+      },
+      {
+        "txt": ".",
+        "col": 2,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "=",
+        "col": 3,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "log10",
+        "col": 4,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "log2",
+        "col": 5,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "modf",
+        "col": 6,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "pow",
+        "col": 7,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "radians",
+        "col": 8,
+        "colspan": 1,
+        "bg": "black"
+      },
+      {
+        "txt": "remainder",
+        "col": 9,
+        "colspan": 1,
+        "bg": "black"
+      }
+    ]
+  ]
+}
