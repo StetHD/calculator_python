@@ -3,28 +3,44 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 import tkinter.messagebox
-from tkinter import Tk, Frame, Menu, Entry, RIGHT, Button, StringVar
+from tkinter import Tk, Frame, Menu, Entry, RIGHT, Button, StringVar, Text
 import json
 from sympy import *
+import screeninfo
+from platform import system
+import customtkinter
 
+# TODO font calculation for different resolution macbook 20, hp 16
 APP_NAME = "Scientific Calculator"
 CONFIRM_MESSAGE = "Are you sure you want to exit?"
-FONT_TUPLE = ("Arial", 20, "bold")
+FONT_TUPLE = ("Arial", 16, "bold")
 
-config_file = open("buid.json")
+config_file = open("build.json")
 config = json.load(config_file)
 
 x = symbols("x")
 init_printing()
-Integral(sqrt(1/x), x)
+Integral(sqrt(1 / x), x)
 
-root = Tk()
+for monitor in screeninfo.get_monitors():
+    print(monitor.width)
+    print(monitor.height)
+
+height = 500
+if system() in ("Linux", "Windows"):
+    height = 550
+
+customtkinter.set_appearance_mode("Dark")
+customtkinter.disable_macos_darkmode()
+customtkinter.customtkinter_color_manager.CTkColorManager().set_main_color(None, None)
+root = customtkinter.CTk()
+
 root.title(APP_NAME)
-root.configure(background="Powder blue")
+# root.configure(background="Powder blue")
 root.resizable(width=False, height=False)
-root.geometry("358x500+300+300")
+root.geometry("358x" + str(height) + "+300+300")
 
-calc = Frame(root)
+calc = customtkinter.CTkFrame(master=root, corner_radius=0, fg_color="#000000")
 calc.grid()
 
 
@@ -36,9 +52,12 @@ def is_okay(why, where, what):
     return what.isnumeric() or what in valid_inputs
 
 
-txt_display = Entry(calc, font=FONT_TUPLE, bg="powder blue", bd=30, width=29, borderwidth=1, justify=RIGHT,
-                    insertofftime=0, validate="key")
-txt_display.grid(row=0, column=0, columnspan=4, pady=1, sticky="we", ipady="30")
+txt_display = customtkinter.CTkEntry(calc, font=("Arial", 55), corner_radius=0, fg_color="#000000", height=120,
+                                     width=358, validate="key")
+txt_display.grid(row=0, column=0, columnspan=4, sticky="we")
+root.grid_columnconfigure(0, weight=1)
+root.grid_rowconfigure(0, weight=1)
+
 entryVar = StringVar()
 ok_command = txt_display.register(is_okay)
 txt_display.configure(validatecommand=(ok_command, "%d", "%i", "%S"))
@@ -47,8 +66,25 @@ buttons = []
 for (row_index, buttons_row) in enumerate(config["buttons"]):
     buttons.append([])
     for (index, btn) in enumerate(buttons_row):
-        buttons[row_index].append(Button(calc, width=3, height=3, font=FONT_TUPLE, bd=2, text=btn["txt"], bg="#000000"))
-        buttons[row_index][index].grid(row=row_index + 1, columnspan=btn["colspan"], column=btn["col"], sticky="we")
+        size = 76 - (len(btn["txt"]) * 16)
+        if size < 0:
+            size = 76
+        buttons[row_index].append(
+            customtkinter.CTkButton(master=calc, width=76, height=76, corner_radius=38, text_font=FONT_TUPLE,
+                                    fg_color=btn["bg"], text=""))
+        if btn["colspan"] > 1:
+            buttons[row_index][index].grid(row=row_index + 1, columnspan=btn["colspan"], padx=5, pady=5,
+                                           column=btn["col"], sticky="we")
+        else:
+            buttons[row_index][index].grid(row=row_index + 1, padx=5, pady=5, column=btn["col"])
+        label = customtkinter.CTkLabel(master=buttons[row_index][index],
+                                       text=btn["txt"],
+                                       fg_color=btn["bg"],
+                                       width=30,
+                                       text_font=FONT_TUPLE,
+                                       corner_radius=0)
+        label.place(anchor=tkinter.CENTER, relx=0.5, rely=0.5)
+
 
 # clear_button = Button(calc, width=3, height=3, font=FONT_TUPLE, bd=2, bg="Powder blue", text=chr(67))
 # clear_button.grid(row=1, column=0, pady=1)
@@ -68,17 +104,13 @@ def calc_exit():
 
 
 def calc_scientific():
-    root.resizable(width=False, height=False)
-    root.geometry("935x500+300+300")
-    txt_display.grid(row=0, column=0, columnspan=13, pady=1, sticky="we", ipady="30")
-    txt_display.update()
+    root.geometry("1125x" + str(height) + "+300+300")
+    txt_display.grid_configure(columnspan=13)
 
 
 def calc_standard():
-    root.resizable(width=False, height=False)
-    root.geometry("358x500+300+300")
-    txt_display.grid(row=0, column=0, columnspan=4, pady=1, sticky="we", ipady="30")
-    txt_display.update()
+    root.geometry("358x" + str(height) + "+300+300")
+    txt_display.grid_configure(columnspan=13)
 
 
 menubar = Menu(calc)

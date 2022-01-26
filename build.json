@@ -2,82 +2,82 @@
   "buttons": [
     [
       {
-        "txt": "C/CE",
+        "txt": "C",
         "col": 0,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#9f9f9f"
       },
       {
         "txt": "-+",
         "col": 1,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#9f9f9f"
       },
       {
         "txt": "%",
         "col": 2,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#9f9f9f"
       },
       {
         "txt": "/",
         "col": 3,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#f59906"
       },
       {
         "txt": "(",
         "col": 4,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": ")",
         "col": 5,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "acos",
         "col": 6,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "acosh",
         "col": 7,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "asin",
         "col": 8,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "asinh",
         "col": 9,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "sin",
         "col": 10,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "sinh",
         "col": 11,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "sqrt",
         "col": 12,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       }
     ],
     [
@@ -85,79 +85,79 @@
         "txt": "7",
         "col": 0,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#313131"
       },
       {
         "txt": "8",
         "col": 1,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#313131"
       },
       {
         "txt": "9",
         "col": 2,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#313131"
       },
       {
         "txt": "x",
         "col": 3,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#f59906"
       },
       {
         "txt": "atan",
         "col": 4,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "atan2",
         "col": 5,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "atanh",
         "col": 6,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "ceil",
         "col": 7,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "cos",
         "col": 8,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "cosh",
         "col": 9,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "tan",
         "col": 10,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "tanh",
         "col": 11,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "trunc",
         "col": 12,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       }
     ],
     [
@@ -165,79 +165,79 @@
         "txt": "4",
         "col": 0,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#313131"
       },
       {
         "txt": "5",
         "col": 1,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#313131"
       },
       {
         "txt": "6",
         "col": 2,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#313131"
       },
       {
         "txt": "-",
         "col": 3,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#f59906"
       },
       {
         "txt": "degrees",
         "col": 4,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "dist",
         "col": 5,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "exp",
         "col": 6,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "abs",
         "col": 7,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "factorial",
         "col": 8,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "floor",
         "col": 9,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "perm",
         "col": 10,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "comb",
         "col": 11,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "ulp",
         "col": 12,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       }
     ],
     [
@@ -245,79 +245,79 @@
         "txt": "1",
         "col": 0,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#313131"
       },
       {
         "txt": "2",
         "col": 1,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#313131"
       },
       {
         "txt": "3",
         "col": 2,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#313131"
       },
       {
         "txt": "+",
         "col": 3,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#f59906"
       },
       {
         "txt": "fmod",
         "col": 4,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "gamma",
         "col": 5,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "gcd",
         "col": 6,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "lcm",
         "col": 7,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "lgamma",
         "col": 8,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "log",
         "col": 9,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "pi",
         "col": 10,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "e",
         "col": 11,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "tau",
         "col": 12,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       }
     ],
     [
@@ -325,55 +325,55 @@
         "txt": "0",
         "col": 0,
         "colspan": 2,
-        "bg": "black"
+        "bg": "#313131"
       },
       {
         "txt": ".",
         "col": 2,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#313131"
       },
       {
         "txt": "=",
         "col": 3,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#f59906"
       },
       {
         "txt": "log10",
         "col": 4,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "log2",
         "col": 5,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "modf",
         "col": 6,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "pow",
         "col": 7,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "radians",
         "col": 8,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       },
       {
         "txt": "remainder",
         "col": 9,
         "colspan": 1,
-        "bg": "black"
+        "bg": "#1f1f1f"
       }
     ]
   ]
