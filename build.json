@@ -1,4 +1,18 @@
 {
+  "app_name": "Scientific Calculator",
+  "messages" : {
+    "confirm": "Are you sure you want to exit ?"
+  },
+  "font": {
+    "family": "Arial",
+    "size": 16,
+    "weight": "bold"
+  },
+  "window": {
+    "min_width": 356,
+    "max_width": 1125,
+    "height": 550
+  },
   "buttons": [
     [
       {
