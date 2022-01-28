@@ -1,4 +1,3 @@
-import math
 from helpers import \
     is_math_operator, is_math_symbol, is_math_unary_operator, evaluate_math_exp, is_math_binary_operator
 
