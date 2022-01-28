@@ -1,12 +1,22 @@
 {
   "app_name": "Scientific Calculator",
-  "messages" : {
+  "messages": {
     "confirm": "Are you sure you want to exit ?"
   },
   "font": {
     "family": "Arial",
-    "size": 16,
-    "weight": "bold"
+    "big": {
+      "size": 16,
+      "weight": "bold"
+    },
+    "medium": {
+      "size": 13,
+      "weight": "bold"
+    },
+    "small": {
+      "size": 10,
+      "weight": "bold"
+    }
   },
   "window": {
     "min_width": 356,
@@ -16,79 +26,92 @@
   "buttons": [
     [
       {
-        "txt": "C",
+        "txt": "AC",
+        "cmd": "AC",
         "col": 0,
         "colspan": 1,
         "bg": "#9f9f9f"
       },
       {
         "txt": "-+",
+        "cmd": "neg",
         "col": 1,
         "colspan": 1,
         "bg": "#9f9f9f"
       },
       {
         "txt": "%",
+        "cmd": "mod",
         "col": 2,
         "colspan": 1,
         "bg": "#9f9f9f"
       },
       {
         "txt": "/",
+        "cmd": "fdiv",
         "col": 3,
         "colspan": 1,
         "bg": "#f59906"
       },
       {
         "txt": "(",
+        "cmd": "(",
         "col": 4,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": ")",
+        "cmd": ")",
         "col": 5,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "acos",
+        "cmd": "acos",
         "col": 6,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "acosh",
+        "cmd": "acosh",
         "col": 7,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "asin",
+        "cmd": "asin",
         "col": 8,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "asinh",
+        "cmd": "asinh",
         "col": 9,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "sin",
+        "cmd": "sin",
         "col": 10,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "sinh",
+        "cmd": "sinh",
         "col": 11,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "sqrt",
+        "cmd": "sqrt",
         "col": 12,
         "colspan": 1,
         "bg": "#1f1f1f"
@@ -97,78 +120,91 @@
     [
       {
         "txt": "7",
+        "cmd": "7",
         "col": 0,
         "colspan": 1,
         "bg": "#313131"
       },
       {
         "txt": "8",
+        "cmd": "8",
         "col": 1,
         "colspan": 1,
         "bg": "#313131"
       },
       {
         "txt": "9",
+        "cmd": "9",
         "col": 2,
         "colspan": 1,
         "bg": "#313131"
       },
       {
         "txt": "x",
+        "cmd": "multiply",
         "col": 3,
         "colspan": 1,
         "bg": "#f59906"
       },
       {
         "txt": "atan",
+        "cmd": "atan",
         "col": 4,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "atan2",
+        "cmd": "atan2",
         "col": 5,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "atanh",
+        "cmd": "atanh",
         "col": 6,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "ceil",
+        "cmd": "ceil",
         "col": 7,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "cos",
+        "cmd": "cos",
         "col": 8,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "cosh",
+        "cmd": "cosh",
         "col": 9,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "tan",
+        "cmd": "tan",
         "col": 10,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "tanh",
+        "cmd": "tanh",
         "col": 11,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "trunc",
+        "cmd": "trunc",
         "col": 12,
         "colspan": 1,
         "bg": "#1f1f1f"
@@ -177,78 +213,91 @@
     [
       {
         "txt": "4",
+        "cmd": "4",
         "col": 0,
         "colspan": 1,
         "bg": "#313131"
       },
       {
         "txt": "5",
+        "cmd": "5",
         "col": 1,
         "colspan": 1,
         "bg": "#313131"
       },
       {
         "txt": "6",
+        "cmd": "6",
         "col": 2,
         "colspan": 1,
         "bg": "#313131"
       },
       {
         "txt": "-",
+        "cmd": "minus",
         "col": 3,
         "colspan": 1,
         "bg": "#f59906"
       },
       {
         "txt": "degrees",
+        "cmd": "degrees",
         "col": 4,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
-        "txt": "dist",
+        "txt": "ln",
+        "cmd": "ln",
         "col": 5,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "exp",
+        "cmd": "exp",
         "col": 6,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "abs",
+        "cmd": "abs",
         "col": 7,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "factorial",
+        "cmd": "factorial",
         "col": 8,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "floor",
+        "cmd": "floor",
         "col": 9,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "perm",
+        "cmd": "perm",
         "col": 10,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "comb",
+        "cmd": "comb",
         "col": 11,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "ulp",
+        "cmd": "ulp",
         "col": 12,
         "colspan": 1,
         "bg": "#1f1f1f"
@@ -257,78 +306,91 @@
     [
       {
         "txt": "1",
+        "cmd": "1",
         "col": 0,
         "colspan": 1,
         "bg": "#313131"
       },
       {
         "txt": "2",
+        "cmd": "2",
         "col": 1,
         "colspan": 1,
         "bg": "#313131"
       },
       {
         "txt": "3",
+        "cmd": "3",
         "col": 2,
         "colspan": 1,
         "bg": "#313131"
       },
       {
         "txt": "+",
+        "cmd": "add",
         "col": 3,
         "colspan": 1,
         "bg": "#f59906"
       },
       {
         "txt": "fmod",
+        "cmd": "fmod",
         "col": 4,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "gamma",
+        "cmd": "gamma",
         "col": 5,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "gcd",
+        "cmd": "gcd",
         "col": 6,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "lcm",
+        "cmd": "lcm",
         "col": 7,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "lgamma",
+        "cmd": "lgamma",
         "col": 8,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "log",
+        "cmd": "log",
         "col": 9,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "pi",
+        "cmd": "pi",
         "col": 10,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "e",
+        "cmd": "e",
         "col": 11,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
-        "txt": "tau",
+        "txt": "2pi",
+        "cmd": "tau",
         "col": 12,
         "colspan": 1,
         "bg": "#1f1f1f"
@@ -337,54 +399,63 @@
     [
       {
         "txt": "0",
+        "cmd": "0",
         "col": 0,
         "colspan": 2,
         "bg": "#313131"
       },
       {
         "txt": ".",
+        "cmd": ".",
         "col": 2,
         "colspan": 1,
         "bg": "#313131"
       },
       {
         "txt": "=",
+        "cmd": "=",
         "col": 3,
         "colspan": 1,
         "bg": "#f59906"
       },
       {
         "txt": "log10",
+        "cmd": "log10",
         "col": 4,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "log2",
+        "cmd": "log2",
         "col": 5,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
-        "txt": "modf",
+        "txt": "//",
+        "cmd": "div",
         "col": 6,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "pow",
+        "cmd": "pow",
         "col": 7,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "radians",
+        "cmd": "radians",
         "col": 8,
         "colspan": 1,
         "bg": "#1f1f1f"
       },
       {
         "txt": "remainder",
+        "cmd": "remainder",
         "col": 9,
         "colspan": 1,
         "bg": "#1f1f1f"

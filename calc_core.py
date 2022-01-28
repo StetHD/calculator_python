@@ -1,39 +1,100 @@
 import math
-from helpers import math_funcs_param_inspector
+from helpers import math_operators, is_math_operator, \
+    is_math_symbol, is_math_unary_operator, evaluate_math_exp, is_math_binary_operator
 
-UNWANTED_PROPS = ["__name__", "__doc__", "__package__", "__loader__", "__spec__", "__file__"]
+LITERALS = "0123456789."
 
 
 class Calculator:
     def __init__(self):
-        self.history = []
-        self.stack = []
-        self.current = "0.0"
-        self.methods = {name: (val, math_funcs_param_inspector(name)) for name, val in math.__dict__.items() if
-                        callable(val)}
-        self.__math_symbols = {name: val for name, val in math.__dict__.items() if not callable(val)
-                               and name not in UNWANTED_PROPS}
+        self.__stack = []
+        self.__operator = ""
+        self.__prev = ""
+        self.result = ""
+
+    def __process_input(self, calc_input):
+        if self.result == "Error":
+            self.result = ""
+
+        if not is_math_operator(calc_input) and (calc_input.isnumeric() or calc_input == ".") \
+                and self.result.count(".") < 2:
+            if is_math_operator(self.__prev) or self.__prev == "=":
+                self.result = ""
+                if self.__operator == "":
+                    self.__stack = []
+            self.result += calc_input
+            self.__prev = calc_input
+            return
+
+        if not is_math_operator(self.__prev) and self.__prev != "=" and self.result != ""\
+                and not is_math_symbol(self.__prev):
+            self.__stack.append(self.result)
+
+        if is_math_symbol(calc_input):
+            try:
+                self.result = str(evaluate_math_exp(calc_input))
+                self.__stack.append(calc_input)
+                self.__prev = calc_input
+            except RuntimeError:
+                self.result = "Error"
+                self.__stack = []
+                self.__operator = ""
+                self.__prev = ""
+            return
+
+        if is_math_operator(calc_input) and len(self.__stack) > 0:
+            if is_math_unary_operator(calc_input):
+                try:
+                    self.result = str(evaluate_math_exp(f"{calc_input}({self.__stack[-1]})"))
+                    self.__stack[-1] = self.result
+                    self.__prev = calc_input
+                except RuntimeError:
+                    self.result = "Error"
+                    self.__stack = []
+                    self.__operator = ""
+                    self.__prev = ""
+                return
+
+            if is_math_binary_operator(calc_input):
+                if len(self.__stack) == 1:
+                    self.__operator = calc_input
+                    self.__prev = calc_input
+                    return
+
+                if len(self.__stack) == 2:
+                    try:
+                        self.result = str(evaluate_math_exp(f"{self.__operator}({self.__stack[-2]}, {self.__stack[-1]})"))
+                        self.__stack = []
+                        self.__stack.append(self.result)
+                        self.__operator = calc_input
+                        self.__prev = calc_input
+                    except RuntimeError:
+                        self.result = "Error"
+                        self.__stack = []
+                        self.__operator = ""
+                        self.__prev = ""
+                    return
+
+        if calc_input == "=" and len(self.__stack) == 2 and self.__operator != "":
+            try:
+                self.result = str(evaluate_math_exp(f"{self.__operator}({self.__stack[-2]}, {self.__stack[-1]})"))
+                self.__stack = []
+                self.__stack.append(self.result)
+                self.__prev = calc_input
+                self.__operator = ""
+            except RuntimeError:
+                self.result = "Error"
+                self.__stack = []
+                self.__operator = ""
+                self.__prev = ""
+            return
 
     def insert(self, calc_input: str):
-        try:
-            self.history.append(float(calc_input))
-            self.stack.append(float(calc_input))
-        except ValueError:
-            pass
 
-
-def eval_math(input_string: str):
-    allowed_names = {name: val for name, val in math.__dict__.items() if name not in UNWANTED_PROPS}
-    allowed_names.update({"abs": abs, "divmod": divmod, "max": max, "min": min, "pow": pow, "round": round, "sum": sum})
-    code = compile(input_string, "<string>", "eval")
-    return eval(code, {"__builtins__": {}}, allowed_names)
-
-
-print(float(eval_math("prod([1, 3, 5 ])")))
-print(float(eval_math("sum([1, 3, 5 ])")))
-print(float(eval_math("sum((1, 3, 5, 10))")))
-print(float(eval_math("log(e)")))
-print(float(eval_math("log(10, 10)")))
-print(float(eval_math("log10(10)")))
-print(float(eval_math("12112.1212+1212")))
-print([name for name, val in math.__dict__.items() if name not in UNWANTED_PROPS])
+        if calc_input == "C":
+            self.result = ""
+            self.__operator = ""
+        if calc_input == "AC":
+            self.__stack = []
+            self.__operator = ""
+        self.__process_input(calc_input)
