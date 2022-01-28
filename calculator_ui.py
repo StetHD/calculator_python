@@ -1,5 +1,5 @@
 import customtkinter
-from tkinter import Menu, messagebox, CENTER, StringVar, Label
+from tkinter import Menu, messagebox, CENTER, StringVar, Label, RIGHT
 
 from config_loader import Config
 from helpers import geometry_string
@@ -24,7 +24,8 @@ class CalculatorUi:
         self.__main_frame.grid()
         self.__input_var = StringVar(value=calc_core.result)
         self.__input_var.set("0")
-        self.__input = customtkinter.CTkEntry(self.__main_frame, height=120, width=358, textvariable=self.__input_var)
+        self.__input = customtkinter.CTkEntry(self.__main_frame, height=120, width=358, textvariable=self.__input_var,
+                                              justify=RIGHT)
         self.__clr_btn = dict()
 
     def __calc_exit(self):

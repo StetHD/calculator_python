@@ -1,8 +1,6 @@
 import math
-from helpers import math_operators, is_math_operator, \
-    is_math_symbol, is_math_unary_operator, evaluate_math_exp, is_math_binary_operator
-
-LITERALS = "0123456789."
+from helpers import \
+    is_math_operator, is_math_symbol, is_math_unary_operator, evaluate_math_exp, is_math_binary_operator
 
 
 class Calculator:
